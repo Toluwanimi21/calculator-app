@@ -16,5 +16,58 @@
       audio.src = './assets/audio/click.mp3';
     </script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <section class="screen">399,981</section>
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="calc-button double operator" onclick="audio.play();">
+            DEL
+          </button>
+          <button class="calc-button operator" onclick="audio.play();">
+            CA
+          </button>
+          <button class="calc-button operator" onclick="audio.play();">
+            ÷
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">7</button>
+          <button class="calc-button" onclick="audio.play();">8</button>
+          <button class="calc-button" onclick="audio.play();">9</button>
+          <button class="calc-button operator" onclick="audio.play();">
+            &times;
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">4</button>
+          <button class="calc-button" onclick="audio.play();">5</button>
+          <button class="calc-button" onclick="audio.play();">6</button>
+          <button class="calc-button operator" onclick="audio.play();">
+            &plus;
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">1</button>
+          <button class="calc-button" onclick="audio.play();">2</button>
+          <button class="calc-button" onclick="audio.play();">3</button>
+          <button class="calc-button operator" onclick="audio.play();">
+            &minus;
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">.</button>
+          <button class="calc-button" onclick="audio.play();">0</button>
+          <button class="calc-button double operator" onclick="audio.play();">
+            &equals;
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
