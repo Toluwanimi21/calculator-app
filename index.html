@@ -2,11 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CALCULATOR APP</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+    <script type="text/javascript">
+      const audio = new Audio();
+      audio.src = './assets/audio/click.mp3';
+    </script>
   </head>
   <body>
-    <h2>Hello World</h2>
+    <div class="calc-container">
+      <section class="screen">399,981</section>
+
+      <div class="wrapper">
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="calc-button double operator" onclick="audio.play();">
+            DEL
+          </button>
+          <button class="calc-button operator" onclick="audio.play();">
+            CA
+          </button>
+          <button class="calc-button operator" onclick="audio.play();">
+            ÷
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">7</button>
+          <button class="calc-button" onclick="audio.play();">8</button>
+          <button class="calc-button" onclick="audio.play();">9</button>
+          <button class="calc-button operator" onclick="audio.play();">
+            &times;
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">4</button>
+          <button class="calc-button" onclick="audio.play();">5</button>
+          <button class="calc-button" onclick="audio.play();">6</button>
+          <button class="calc-button operator" onclick="audio.play();">
+            &plus;
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">1</button>
+          <button class="calc-button" onclick="audio.play();">2</button>
+          <button class="calc-button" onclick="audio.play();">3</button>
+          <button class="calc-button operator" onclick="audio.play();">
+            &minus;
+          </button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button" onclick="audio.play();">.</button>
+          <button class="calc-button" onclick="audio.play();">0</button>
+          <button class="calc-button double operator" onclick="audio.play();">
+            &equals;
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </div>
+  </div>
   </body>
 </html>
